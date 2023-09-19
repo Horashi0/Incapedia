@@ -1,0 +1,69 @@
+.Logo {
+    width: 6%;
+    border-radius: 20%;
+    padding-left: 2%;
+}
+
+#h1Head
+{
+    text-align: left;
+    font-family: "Consolas";
+    font-size: 1.5vw;
+    padding-left: 2%;
+}
+
+#h1About {
+    position: absolute;
+    font-family: "Consolas";
+    font-size: 1.5vw;
+    right: 0%;
+    padding-right: 4%;
+}
+
+#vertical1{
+    position: absolute;
+    font-family: "Consolas";
+    font-size: 1.5vw;
+    right: 0%;
+    padding-right: 9%;
+}
+
+#h1Gallery {
+    position: absolute;
+    font-family: "Consolas";
+    font-size: 1.5vw;
+    right: 0%;
+    padding-right: 11%;
+}
+
+a:visited, a:active, a:hover, a:link {
+    text-decoration: none;
+    color: black;
+    text-decoration-line: none;
+}
+
+header
+{
+    display: flex;
+    background-color: #8A8585;
+    align-items: center;
+}
+body
+{
+    background-color: #706D6D;
+    margin: 0;
+}
+
+#imageArray {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 0;
+    justify-content: center;
+}
+
+#item {
+    width: 24%;
+    padding: 5px;
+    height: auto;
+}
