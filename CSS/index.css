@@ -1,13 +1,5 @@
-.Logo {
-    width: 5%;
-    border-radius: 20%;
-    justify-content: center;
-    padding-left: 20px;
-}
-
-#h1Head
+#h1Incapedia
 {
-    text-align: left;
     font-family: "Consolas";
     font-size: 1.5vw;
     padding-left: 2%;
@@ -48,6 +40,7 @@ header
     display: flex;
     background-color: #D53155;
     align-items: center;
+    height: 10%;
 }
 body
 {

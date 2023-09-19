@@ -1,12 +1,5 @@
-.Logo {
-    width: 6%;
-    border-radius: 20%;
-    padding-left: 2%;
-}
-
-#h1Head
+#h1Incapedia
 {
-    text-align: left;
     font-family: "Consolas";
     font-size: 1.5vw;
     padding-left: 2%;
@@ -45,12 +38,13 @@ a:visited, a:active, a:hover, a:link {
 header
 {
     display: flex;
-    background-color: #8A8585;
+    background-color: #D53155;
     align-items: center;
+    height: 10%;
 }
 body
 {
-    background-color: #706D6D;
+    background-color: #141723;
     margin: 0;
 }
 
