@@ -3,6 +3,7 @@
     font-family: "Consolas";
     font-size: 1.5vw;
     padding-left: 2%;
+    color: #E8C850;
 }
 
 #h1About {
@@ -18,7 +19,7 @@
     font-family: "Consolas";
     font-size: 1.5vw;
     right: 0%;
-    padding-right: 9%;
+    padding-right: 9.3%;
 }
 
 #h1Gallery {
@@ -27,11 +28,12 @@
     font-size: 1.5vw;
     right: 0%;
     padding-right: 11%;
+    color: #E8C850;
 }
 
 a:visited, a:active, a:hover, a:link {
     text-decoration: none;
-    color: black;
+    color: #E8C850;
     text-decoration-line: none;
 }
 
@@ -41,6 +43,7 @@ header
     background-color: #D53155;
     align-items: center;
     height: 10%;
+
 }
 body
 {
