@@ -56,9 +56,14 @@ body
     justify-content: center;
 }
 
-#item {
-    width:24%;
+.item.horizontal {
+    width:16%;
+    padding: 5px;
     height:auto;
+    object-fit: contain;
+}
+.item.vertical {
+    width:8%;
     padding: 5px;
     object-fit: contain;
 }

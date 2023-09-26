@@ -18,18 +18,35 @@
         <section class="imageArray">
             <?php
             $directory = "../Images/IncaternGallery/";
-            $filecount = 0;
             $files2 = glob( $directory ."*" );
-            if( $files2 ) {
-                $filecount = count($files2);
-                $filecount--;
-            }
-            for($i = 0; $i < $filecount; $i++)
+            foreach($files2 as $file)
             {
-                $s_number = str_pad( $i, 4, "0", STR_PAD_LEFT );
-                $format = "<img src='../Images/IncaternGallery/$s_number.jpg' alt='Incatern' id='item'>";
-                $resulting_string = sprintf($format, $s_number);
-                echo $resulting_string;
+                
+                $exif = exif_read_data($file);
+
+                if($exif['Orientation'] == 6)
+                {
+                    list($height, $width) = getimagesize($file);
+                    $orientation = ($width > $height) ? 'horizontal' : 'vertical';
+                    $sortedImages[$orientation][] = $file;
+                }
+                else
+                {
+                    list($width, $height) = getimagesize($file);
+                    $orientation = ($width > $height) ? 'horizontal' : 'vertical';
+                    $sortedImages[$orientation][] = $file;
+                }
+                
+                // echo "| ". $file . ", Width:" . $width . ", Height: " . $height ." ". $temp2 . "\n";
+            }
+
+            foreach (['horizontal', 'vertical'] as $orientation) {
+                if (isset($sortedImages[$orientation])) {
+                    foreach ($sortedImages[$orientation] as $file) {
+                        $fileName = basename($file);
+                        echo "<img src='../Images/IncaternGallery/$fileName' alt='Incatern' class='item $orientation'>";
+                    }
+                }
             }
             ?>
         </section>
